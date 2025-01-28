@@ -1,13 +1,8 @@
 import clsx from "clsx";
 
-import css from "./FeedbackSection.module.css";
+import css from "./Feedback.module.css";
 
-export default function FeedbackSection({
-  className,
-  feedbacks,
-  total,
-  positive,
-}) {
+export default function Feedback({ className, feedbacks, total, positive }) {
   const feedbackResults = [
     { key: "good", label: "good", value: feedbacks.good },
     { key: "neutral", label: "neutral", value: feedbacks.neutral },

@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 
 import css from "./App.module.css";
 
-import DescriptionSection from "../DescriptionSection/DescriptionSection.jsx";
-import FeedbackSection from "../FeedbackSection/FeedbackSection.jsx";
+import Description from "../Description/Description.jsx";
+import Feedback from "../Feedback/Feedback.jsx";
 import Notification from "../Notification/Notification.jsx";
-import OptionsSection from "../OptionsSection/OptionsSection.jsx";
+import Options from "../Options/Options.jsx";
 
 const getInitialFeedbacks = () => ({
   good: 0,
@@ -62,8 +62,8 @@ function App() {
 
   return (
     <>
-      <DescriptionSection className={css.taskContainer} />
-      <OptionsSection
+      <Description className={css.taskContainer} />
+      <Options
         className={css.taskContainer}
         feedbacks={feedbacks}
         allowReset={hasFeedbacks}
@@ -71,7 +71,7 @@ function App() {
         onResetFeedback={onFeedbackReset}
       />
       {hasFeedbacks ? (
-        <FeedbackSection
+        <Feedback
           className={css.taskContainer}
           feedbacks={feedbacks}
           total={totalFeedbacks}

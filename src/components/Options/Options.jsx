@@ -1,8 +1,8 @@
 import clsx from "clsx";
 
-import css from "./OptionsSection.module.css";
+import css from "./Options.module.css";
 
-export default function OptionsSection({
+export default function Options({
   className,
   feedbacks,
   allowReset,

@@ -4,7 +4,7 @@ const cafeName = "Sip Happens Café";
 const cafeDesc =
   "Please leave your feedback about our service by selecting one of the options below.\n";
 
-export default function DescriptionSection({ className }) {
+export default function Description({ className }) {
   return (
     <>
       <div className={clsx(className)}>
