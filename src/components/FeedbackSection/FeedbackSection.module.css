@@ -1,0 +1,9 @@
+.feedbackSection {
+  display: flex;
+  gap: 8px;
+}
+
+.feedbackLabel {
+  text-transform: capitalize;
+  margin-right: 4px;
+}

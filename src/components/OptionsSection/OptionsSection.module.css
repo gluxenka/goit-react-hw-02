@@ -1,0 +1,9 @@
+.optionsSection {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.optionsSection button {
+  text-transform: capitalize;
+}
